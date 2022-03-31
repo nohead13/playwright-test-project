@@ -13,11 +13,8 @@ Follow steps to execute test locally.
 1. Clone this project
 
 ```bash
-$ git clone --depth 1 https://github.com/Shyam-Chen/Playwright-Starter.git <PROJECT_NAME>
-$ cd <PROJECT_NAME>
-$ git clone https://github.com/
-$ cd playwright-docker-test
-$ docker-compose run playwright bash
+$ git clone git@github.com:nohead13/playwright-test-project.git
+$ cd playwright-test-project
 ```
 
 2. Install dependencies. [Playwright install docs](https://playwright.dev/docs/intro)
@@ -26,17 +23,25 @@ $ docker-compose run playwright bash
 $ npm init playwright@latest
 ```
 
-3. Run test locally. [Playwright test run docs](https://playwright.dev/docs/intro#command-line)
+3. Run test. [Playwright test run docs](https://playwright.dev/docs/intro#command-line)
 
+Locally:
 ```bash
 $ npx playwright test
 ```
+Docker:
+```bash
+$ docker-compose run playwright bash
+```
+
 
 4. Open last report
 
 ```bash
 $ npx playwright show-report test-report
 ```
+also report possible to find:
+(./test-report/index.html)
 
 ## Test plan
 
@@ -47,6 +52,6 @@ As plan was check:
 - [x] Test with selected document type
 - [x] Test with selected language
 - [x] Test with browser local check
-- [] Test with changed geo positions
-- [] Test link on legal/data processing
-- [] Test to check API session token 
+- [ ] Test with changed geo positions
+- [ ] Test link on legal/data processing
+- [ ] Test to check API session token 
