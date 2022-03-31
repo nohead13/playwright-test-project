@@ -1,0 +1,11 @@
+# docker-compose.yml
+version: '3.7'
+services:
+  playwright:
+    container_name: playTest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./test-report:/app/test-report
+  

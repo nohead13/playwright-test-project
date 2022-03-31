@@ -1,0 +1,11 @@
+#Blacklist
+*
+
+#Allowlist
+!*/
+
+!package.json
+!package-lock.json
+
+!*.js
+!*.ts
